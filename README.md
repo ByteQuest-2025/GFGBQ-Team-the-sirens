@@ -17,7 +17,7 @@ Deployed Link Coming Soon / [Insert Link if Deployed]
 https://drive.google.com/file/d/18y9mMl5JG7jzAZJm6BnCYJw5oEtGThJo/view?usp=drive_link
 
 PPT Link:
-[Insert Your PPT Link Here]
+https://drive.google.com/file/d/19N-j7ogyM3la1G3vwzAlpVxei1zPnqIc/view?usp=sharing
 
 ✅ Project Overview
 
