@@ -9,9 +9,9 @@ export default function LandingPage() {
       <div className="portal-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div className="portal-logo">
           <img 
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" 
-            alt="India Flag" 
-            style={{ width: '48px', height: '32px', objectFit: 'cover', borderRadius: '4px' }}
+            src="/emblem.png" 
+            alt="Government of India Emblem" 
+            style={{ width: '48px', height: '48px', objectFit: 'contain' }}
           />
           <div className="logo-text">
             <h1>National Grievance Portal</h1>

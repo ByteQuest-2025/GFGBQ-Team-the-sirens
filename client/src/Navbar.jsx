@@ -16,10 +16,10 @@ export default function Navbar() {
     }}>
       <div style={{ fontWeight: '800', fontSize: '20px', color: '#1e40af', display: 'flex', alignItems: 'center', gap: '8px' }}>
         <img 
-          src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" 
-          alt="India Flag" 
-          style={{ width: '28px', height: '19px', objectFit: 'cover', borderRadius: '2px' }}
-        /> CivicPulse
+          src="/emblem.png" 
+          alt="Government of India Emblem" 
+          style={{ width: '32px', height: '32px', objectFit: 'contain' }}
+        /> National Grievance Portal
       </div>
       <div style={{ display: 'flex', gap: '24px' }}>
         <Link to="/" style={{ textDecoration: 'none', color: '#64748b', fontWeight: '500' }}>File Grievance</Link>
