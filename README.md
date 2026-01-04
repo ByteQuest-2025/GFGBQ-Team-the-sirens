@@ -1,66 +1,103 @@
-Problem Statement
-Developing a transparent, AI-driven National Grievance Redressal Portal that automates complaint categorization, priority assessment, and real-time tracking to enhance citizen-government communication.
+📌 Problem Statement
 
-Project Name
+Develop a transparent, AI-driven National Grievance Redressal Portal that automates complaint categorization, priority assessment, and real-time tracking to improve citizen–government communication and accountability.
+
+🏷️ Project Details
+
+Project Name:
 National Grievance Portal
 
-Team Name
-ByteQuest # Deployed Link Coming Soon / [Insert Link if deployed]
+Team Name:
+ByteQuest
 
-2-Minute Demonstration Video Link
-[https://drive.google.com/file/d/1kq4mKz8_fsIBCvvLjdqo1oJ3ZZad2rIs/view?usp=sharing
+Deployed Link:
+Deployed Link Coming Soon / [Insert Link if Deployed]
 
-PPT Link
+2-Minute Demonstration Video:
+[Insert Your Video Link Here]
+
+PPT Link:
 [Insert Your PPT Link Here]
 
 ✅ Project Overview
-The National Grievance Portal is a full-stack MERN application integrated with Google Gemini AI. It allows citizens to file complaints which are then processed by AI to determine urgency and category. The system features a secure Admin Dashboard for government officials to monitor and manage grievances in real-time.
 
-Key Features:
-AI-Automated Analysis: Uses Gemini Flash to generate 1-sentence summaries and categorize reports (e.g., Roads, Water, Electricity).
+The National Grievance Portal is a full-stack MERN-based web application integrated with Google Gemini AI. It enables citizens to submit grievances that are automatically analyzed by AI to determine urgency and category.
 
-Real-Time Dashboard: A high-fidelity admin interface synchronized via Port 5000 for live data monitoring.
+A secure Admin Dashboard allows government officials to monitor, analyze, and manage grievances in real time, ensuring faster resolution and improved transparency.
 
-Status Tracking: Citizens can track the lifecycle of their grievance using unique MongoDB ObjectIDs.
+✨ Key Features
 
-Fail-Safe Demo Mode: Built-in offline data handling to ensure the UI remains functional during network interruptions.
+AI-Automated Analysis
+Uses Gemini Flash to generate concise one-line summaries and automatically categorize grievances (e.g., Roads, Water, Electricity).
 
-✅ Setup & Installation Instructions
+Real-Time Admin Dashboard
+A high-fidelity dashboard synchronized via Port 5000 for live grievance monitoring and analytics.
+
+Grievance Status Tracking
+Citizens can track the complete lifecycle of their grievance using a unique MongoDB ObjectID.
+
+Fail-Safe Demo Mode
+Built-in offline data handling ensures the UI remains functional during network disruptions or demo conditions.
+
+⚙️ Setup & Installation Instructions
 Backend (Server)
+
 Navigate to the server folder.
 
-Install dependencies: npm install.
+Install dependencies:
 
-Create a .env file with your MONGO_URL and GEMINI_API_KEY.
+npm install
 
-Run the seed script to populate the database: node seed.js.
 
-Start the server: node index.js (Runs on Port 5000).
+Create a .env file and add the following variables:
+
+MONGO_URL
+
+GEMINI_API_KEY
+
+Populate the database using the seed script:
+
+node seed.js
+
+
+Start the server (runs on Port 5000):
+
+node index.js
 
 Frontend (Client)
+
 Navigate to the client folder.
 
-Install dependencies: npm install.
+Install dependencies:
 
-Start the application: npm run dev.
+npm install
 
-Access the dashboard at /admin-dashboard.
 
-✅ Usage Instructions
-File a Grievance: Enter your name and description (e.g., "Dirty water issue").
+Start the frontend application:
 
-AI Processing: The system will automatically tag the priority and category.
+npm run dev
 
-Admin Review: Log in as admin (admin@gov.in / admin321) to view the analytics and summaries.
 
-Track: Use the generated ID to check status updates in real-time.
+Access the admin panel at:
 
-✅ Relevant Screenshots
+/admin-dashboard
 
-<img width="1318" height="972" alt="image" src="https://github.com/user-attachments/assets/3e1d334d-90e4-4544-b1fe-b90439b77979" />
-<img width="1885" height="913" alt="image" src="https://github.com/user-attachments/assets/fb2cea8a-0a6c-4971-af18-828c2e5cf212" />
-<img width="1017" height="841" alt="image" src="https://github.com/user-attachments/assets/a9f01c7e-3b0c-4b90-8712-7d0844632ee5" />
+🚀 Usage Instructions
 
-Admin Dashboard: Showing AI-summarized reports and status badges.
+File a Grievance
+Enter your name and a brief issue description (e.g., “Dirty water issue”).
 
-System Connectivity: Verified Port 5000 integration.
+AI Processing
+The system automatically analyzes the complaint, assigning a priority level and category.
+
+Admin Review
+Log in using admin credentials (admin@gov.in / admin321) to view summaries, analytics, and grievance status.
+
+Track Grievance
+Use the generated grievance ID to track status updates in real time.
+
+🖼️ Relevant Screenshots
+
+Admin Dashboard: Displays AI-generated summaries, grievance categories, and status badges.
+
+System Connectivity: Confirms real-time backend integration via Port 5000.
