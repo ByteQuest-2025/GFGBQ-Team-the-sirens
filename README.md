@@ -1,103 +1,46 @@
-📌 Problem Statement
+National Grievance Redressal Portal
 
-Develop a transparent, AI-driven National Grievance Redressal Portal that automates complaint categorization, priority assessment, and real-time tracking to improve citizen–government communication and accountability.
+Team ByteQuest
 
-🏷️ Project Details
+Problem Statement
+<img width="1318" height="972" alt="image" src="https://github.com/user-attachments/assets/81fc9a4d-194d-4e98-ad8d-bf306f6ac92e" />
 
-Project Name:
-National Grievance Portal
+The objective of this project is to design and implement a transparent, AI-driven National Grievance Redressal Portal that automates grievance categorization, priority assessment, and real-time tracking in order to improve communication, accountability, and responsiveness between citizens and government authorities.
 
-Team Name:
-ByteQuest
+Project Overview
 
-Deployed Link:
-Deployed Link Coming Soon / [Insert Link if Deployed]
+The National Grievance Redressal Portal is a full-stack web application built using the MERN stack and integrated with Google Gemini AI. The platform enables citizens to submit grievances through a simple interface. Each grievance is automatically analyzed by the AI system to generate a concise summary, assign a relevant category such as roads, water, or electricity, and determine its urgency level.
 
-2-Minute Demonstration Video:
-https://drive.google.com/file/d/18y9mMl5JG7jzAZJm6BnCYJw5oEtGThJo/view?usp=drive_link
+Government officials interact with the system through a secure admin dashboard that provides real-time visibility into all submitted grievances. This dashboard supports monitoring, analysis, and status updates, ensuring faster resolution and improved transparency in grievance handling.
 
-PPT Link:
-https://drive.google.com/file/d/19N-j7ogyM3la1G3vwzAlpVxei1zPnqIc/view?usp=sharing
+Key Features
 
-✅ Project Overview
+The system uses Gemini Flash for automated grievance analysis, including one-line summarization, category classification, and priority assessment. The admin dashboard updates in real time through a backend service running on Port 5000, allowing officials to track grievances as they are submitted. Citizens are able to track the complete lifecycle of their grievance using a unique MongoDB ObjectID. A built-in fail-safe demo mode ensures the user interface remains functional even during network interruptions or offline demonstration scenarios.
 
-The National Grievance Portal is a full-stack MERN-based web application integrated with Google Gemini AI. It enables citizens to submit grievances that are automatically analyzed by AI to determine urgency and category.
+Technology Stack
+<img width="1017" height="841" alt="image" src="https://github.com/user-attachments/assets/38822bdc-9b96-48b8-b0b2-a06780c14157" />
 
-A secure Admin Dashboard allows government officials to monitor, analyze, and manage grievances in real time, ensuring faster resolution and improved transparency.
+The application is developed using MongoDB for data storage, Express.js and Node.js for the backend, and React for the frontend. Google Gemini AI is used for natural language processing and grievance analysis.
 
-✨ Key Features
+Setup and Installation
 
-AI-Automated Analysis
-Uses Gemini Flash to generate concise one-line summaries and automatically categorize grievances (e.g., Roads, Water, Electricity).
+To run the project locally, the backend server must be configured with a MongoDB connection string and a Gemini API key stored in a .env file. The database can be populated using the provided seed script. The backend runs on Port 5000, while the frontend runs as a separate client application. The admin dashboard is accessible through the /admin-dashboard route.
 
-Real-Time Admin Dashboard
-A high-fidelity dashboard synchronized via Port 5000 for live grievance monitoring and analytics.
+Usage
 
-Grievance Status Tracking
-Citizens can track the complete lifecycle of their grievance using a unique MongoDB ObjectID.
+Citizens can file a grievance by entering their name and a brief description of the issue, such as a water supply problem. The system automatically processes the grievance using AI to determine its category and priority. Government officials can log in to the admin dashboard using the provided credentials to view AI-generated summaries, analytics, and grievance statuses. Citizens can track their grievance in real time using the generated grievance ID.
+<img width="1885" height="913" alt="image" src="https://github.com/user-attachments/assets/a4e2e141-dfdc-43a3-b396-912d6cd90266" />
 
-Fail-Safe Demo Mode
-Built-in offline data handling ensures the UI remains functional during network disruptions or demo conditions.
+Demo and Presentation
 
-⚙️ Setup & Installation Instructions
-Backend (Server)
+A two-minute demonstration video showcasing the system workflow is available at
+https://drive.google.com/file/d/18y9mMl5JG7jzAZJm6BnCYJw5oEtGThJo/view
 
-Navigate to the server folder.
+The project presentation slides are available at
+https://drive.google.com/file/d/19N-j7ogyM3la1G3vwzAlpVxei1zPnqIc/view
 
-Install dependencies:
+The deployed application link will be added once deployment is completed.
 
-npm install
+Conclusion
 
-
-Create a .env file and add the following variables:
-
-MONGO_URL
-
-GEMINI_API_KEY
-
-Populate the database using the seed script:
-
-node seed.js
-
-
-Start the server (runs on Port 5000):
-
-node index.js
-
-Frontend (Client)
-
-Navigate to the client folder.
-
-Install dependencies:
-
-npm install
-
-
-Start the frontend application:
-
-npm run dev
-
-
-Access the admin panel at:
-
-/admin-dashboard
-
-🚀 Usage Instructions
-
-File a Grievance
-Enter your name and a brief issue description (e.g., “Dirty water issue”).
-
-AI Processing
-The system automatically analyzes the complaint, assigning a priority level and category.
-
-Admin Review
-Log in using admin credentials (admin@gov.in / admin321) to view summaries, analytics, and grievance status.
-
-Track Grievance
-Use the generated grievance ID to track status updates in real time.
-
-🖼️ Relevant Screenshots
-
-Admin Dashboard: Displays AI-generated summaries, grievance categories, and status badges.
-
-System Connectivity: Confirms real-time backend integration via Port 5000.
+The National Grievance Redressal Portal demonstrates how AI-driven automation can significantly improve governance workflows by reducing response time, increasing transparency, and empowering citizens with real-time grievance tracking. The system is scalable and can be extended with features such as multilingual support, notification services, and advanced analytics for policy-level insights.
