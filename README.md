@@ -14,7 +14,7 @@ Deployed Link:
 Deployed Link Coming Soon / [Insert Link if Deployed]
 
 2-Minute Demonstration Video:
-[Insert Your Video Link Here]
+https://drive.google.com/file/d/18y9mMl5JG7jzAZJm6BnCYJw5oEtGThJo/view?usp=drive_link
 
 PPT Link:
 [Insert Your PPT Link Here]
