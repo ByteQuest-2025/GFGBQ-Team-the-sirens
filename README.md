@@ -1,164 +1,66 @@
-# Problem Statement
-AI for Grievance Redressal in Public Governance
+Problem Statement
+Developing a transparent, AI-driven National Grievance Redressal Portal that automates complaint categorization, priority assessment, and real-time tracking to enhance citizen-government communication.
 
-# Project Name
-Smart Grievance AI – Automated Complaint Classification System
+Project Name
+National Grievance Portal
 
-# Team Name
-The Sirens
+Team Name
+ByteQuest # Deployed Link Coming Soon / [Insert Link if deployed]
 
-# Deployed Link
-Not deployed yet
+2-Minute Demonstration Video Link
+[Insert Your Video Link Here]
 
-# 2-minute Demonstration Video Link
-Will be updated
+PPT Link
+[Insert Your PPT Link Here]
 
-# PPT Link
-Will be updated
+✅ Project Overview
+The National Grievance Portal is a full-stack MERN application integrated with Google Gemini AI. It allows citizens to file complaints which are then processed by AI to determine urgency and category. The system features a secure Admin Dashboard for government officials to monitor and manage grievances in real-time.
 
----
+Key Features:
+AI-Automated Analysis: Uses Gemini Flash to generate 1-sentence summaries and categorize reports (e.g., Roads, Water, Electricity).
 
-## Project Overview
-Public governance bodies receive thousands of citizen grievances every day related to roads, water supply, sanitation, healthcare, electricity, and other civic issues. These grievances are usually submitted as unstructured text and are manually reviewed, which leads to delays, poor prioritization, and lack of transparency.
+Real-Time Dashboard: A high-fidelity admin interface synchronized via Port 5000 for live data monitoring.
 
-Smart Grievance AI is an intelligent grievance redressal system powered by **Google Gemini AI** that automatically analyzes grievance text, intelligently classifies complaints into relevant categories, assigns priority levels based on urgency, and generates concise summaries. This helps authorities resolve critical complaints faster and improves overall citizen satisfaction.
+Status Tracking: Citizens can track the lifecycle of their grievance using unique MongoDB ObjectIDs.
 
----
+Fail-Safe Demo Mode: Built-in offline data handling to ensure the UI remains functional during network interruptions.
 
-## System Architecture
-The system follows a modern full-stack architecture:
+✅ Setup & Installation Instructions
+Backend (Server)
+Navigate to the server folder.
 
-1. **Citizen Portal** - A React-based responsive web interface for citizens to submit grievances with a multi-step form (personal details, grievance details, document upload)
-2. **Backend API** - An Express.js server that handles grievance submission, AI processing, and data management
-3. **AI Processing Layer** - Google Gemini Flash API integration for intelligent grievance analysis, categorization, priority detection, and summarization
-4. **Database** - MongoDB Atlas for persistent storage of grievances and tracking
-5. **Tracking System** - Real-time grievance status tracking using unique tracking IDs
+Install dependencies: npm install.
 
+Create a .env file with your MONGO_URL and GEMINI_API_KEY.
 
----
+Run the seed script to populate the database: node seed.js.
 
-## Features
+Start the server: node index.js (Runs on Port 5000).
 
-### Citizen Features
-- **Multi-Step Grievance Submission Form** - User-friendly 3-step form with validation
-  - Step 1: Personal Information (Name, Email, Mobile with OTP verification, Aadhaar, Address)
-  - Step 2: Grievance Details (Department selection, Priority, Subject, Description, Incident Date)
-  - Step 3: Document Upload and Review
-- **OTP-Based Mobile Verification** - Secure verification for citizen identity
-- **Real-Time Grievance Tracking** - Track complaint status using unique tracking ID
-- **Department Selection** - Choose from 9+ government departments (Water, Electricity, Transport, Health, Education, Police, Municipality, Land, etc.)
+Frontend (Client)
+Navigate to the client folder.
 
-### AI-Powered Features
-- **Intelligent Category Classification** - Gemini AI automatically categorizes grievances
-- **Smart Priority Detection** - AI-assigned priority levels (High/Medium/Low) based on urgency analysis
-- **AI-Generated Summaries** - Concise one-sentence summaries of each grievance
-- **Automated Department Routing** - Smart routing based on complaint content
+Install dependencies: npm install.
 
-### Technical Features
-- **Responsive Design** - Modern UI that works on all devices
-- **Real-Time Form Validation** - Client-side validation for better UX
-- **File Upload Support** - Attach supporting documents (up to 5MB)
-- **REST API** - Well-structured API endpoints for all operations
+Start the application: npm run dev.
 
----
+Access the dashboard at /admin-dashboard.
 
-## Technology Stack
+✅ Usage Instructions
+File a Grievance: Enter your name and description (e.g., "Dirty water issue").
 
-### Frontend
-- **React.js 19** - Modern React with hooks for UI components
-- **React Router v7** - Client-side routing and navigation
-- **Vite** - Next-generation frontend build tool
-- **Axios** - HTTP client for API requests
-- **CSS3** - Custom styling with gradients and animations
+AI Processing: The system will automatically tag the priority and category.
 
-### Backend
-- **Node.js** - JavaScript runtime environment
-- **Express.js 5** - Web application framework
-- **Mongoose** - MongoDB object modeling
-- **CORS** - Cross-origin resource sharing support
-- **dotenv** - Environment variable management
+Admin Review: Log in as admin (admin@gov.in / admin321) to view the analytics and summaries.
 
-### Database
-- **MongoDB Atlas** - Cloud-hosted NoSQL database
+Track: Use the generated ID to check status updates in real-time.
 
-### AI/ML Layer
-- **Google Generative AI SDK** - Official Gemini API integration
-- **Gemini Flash** - Fast and efficient AI model for text analysis
-- **Prompt Engineering** - Structured prompts for consistent JSON responses
+✅ Relevant Screenshots
 
----
+<img width="1318" height="972" alt="image" src="https://github.com/user-attachments/assets/3e1d334d-90e4-4544-b1fe-b90439b77979" />
+<img width="1885" height="913" alt="image" src="https://github.com/user-attachments/assets/fb2cea8a-0a6c-4971-af18-828c2e5cf212" />
+<img width="1017" height="841" alt="image" src="https://github.com/user-attachments/assets/a9f01c7e-3b0c-4b90-8712-7d0844632ee5" />
 
-## API Endpoints
+Admin Dashboard: Showing AI-summarized reports and status badges.
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/report` | Submit a new grievance (triggers AI analysis) |
-| GET | `/api/grievances` | Get all grievances (for admin) |
-| GET | `/api/grievance/:id` | Get single grievance by tracking ID |
-
----
-
-## Getting Started
-
-### Prerequisites
-- Node.js (v18 or higher)
-- MongoDB Atlas account or local MongoDB instance
-- Google AI Studio API key (for Gemini)
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/ByteQuest-2025/GFGBQ-Team-the-sirens.git
-   cd GFGBQ-Team-the-sirens
-   ```
-
-2. **Setup Backend**
-   ```bash
-   cd server
-   npm install
-   # Configure your MongoDB URL and Gemini API key in index.js
-   node index.js
-   ```
-
-3. **Setup Frontend**
-   ```bash
-   cd client
-   npm install
-   npm run dev
-   ```
-
-4. **Access the Application**
-   - Frontend: http://localhost:5173
-   - Backend API: http://localhost:3001
-
----
-
-## Project Structure
-```
-GFGBQ-Team-the-sirens/
-├── client/                 # React Frontend
-│   ├── src/
-│   │   ├── App.jsx        # Main app with routing
-│   │   ├── LandingPage.jsx    # Home page with navigation
-│   │   ├── GrievanceForm.jsx  # Multi-step grievance form
-│   │   ├── TrackRequest.jsx   # Grievance tracking page
-│   │   └── App.css        # Global styles
-│   └── package.json
-├── server/                 # Node.js Backend
-│   ├── index.js           # Express server + Gemini AI integration
-│   └── package.json
-└── README.md
-```
-
----
-
-## Future Enhancements
-- Admin dashboard with analytics and grievance management
-- Voice-based grievance submission
-- Multi-language complaint support (Hindi, Regional languages)
-- Email/SMS notifications for status updates
-- Integration with official government grievance portals (CPGRAMS)
-- Advanced analytics dashboard for government authorities
-- Sentiment analysis for priority escalation
-- Chatbot for guided grievance submission
+System Connectivity: Verified Port 5000 integration.
