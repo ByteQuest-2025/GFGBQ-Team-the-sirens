@@ -8,7 +8,7 @@ Team Name
 ByteQuest # Deployed Link Coming Soon / [Insert Link if deployed]
 
 2-Minute Demonstration Video Link
-[Insert Your Video Link Here]
+[https://drive.google.com/file/d/1kq4mKz8_fsIBCvvLjdqo1oJ3ZZad2rIs/view?usp=sharing
 
 PPT Link
 [Insert Your PPT Link Here]
